@@ -1,0 +1,96 @@
+<html>
+<head>
+  <meta charset="UTF-8">
+  <title>Contact Us - Best Cars Dealership</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    body { background-color: #f4f6f9; }
+    .contact-header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+    .contact-header h1 { font-weight: bold; margin-bottom: 15px; }
+    .contact-card {
+      background: white;
+      border-radius: 12px;
+      box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+      padding: 30px;
+      text-align: center;
+      height: 100%;
+    }
+    .contact-card .icon { font-size: 40px; margin-bottom: 10px; }
+    .contact-card h4 { color: #1e3c72; font-weight: bold; }
+    .hours-table { background: white; border-radius: 12px; overflow: hidden;
+                   box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .hours-table th { background-color: #1e3c72; color: white; }
+  </style>
+</head>
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkturquoise; height: 1in;">
+    <div class="container-fluid">
+      <h2 style="padding-right: 5%;">Dealerships</h2>
+      <div class="collapse navbar-collapse" id="navbarText">
+        <ul class="navbar-nav me-auto mb-2 mb-lg-0">
+          <li class="nav-item"><a class="nav-link" style="font-size: larger;" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link" style="font-size: larger;" href="/about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link active" style="font-size: larger; font-weight: bold;" href="/contact">Contact Us</a></li>
+        </ul>
+      </div>
+    </div>
+  </nav>
+
+  <div class="contact-header">
+    <h1>Contact Us</h1>
+    We'd love to hear from you! Reach out to our team for sales, service or any questions about our cars.
+  </div>
+
+  <div class="container my-5">
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="contact-card">
+          <div class="icon">📍</div>
+          <h4>Visit Us</h4>
+          <p>Best Cars Dealership<br>1250 Market Street<br>Chicago, IL 60607, USA</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-card">
+          <div class="icon">📞</div>
+          <h4>Call Us</h4>
+          <p>Sales: +1 (312) 555-0198<br>Service: +1 (312) 555-0145<br>Toll-free: 1-800-555-0110</p>
+        </div>
+      </div>
+      <div class="col-md-4">
+        <div class="contact-card">
+          <div class="icon">✉️</div>
+          <h4>Email Us</h4>
+          <p>General: info@bestcars.com<br>Sales: sales@bestcars.com<br>Support: support@bestcars.com</p>
+        </div>
+      </div>
+    </div>
+
+    <h2 class="text-center mt-5 mb-4">Opening Hours</h2>
+    <div class="row justify-content-center">
+      <div class="col-md-6">
+        <table class="table hours-table text-center mb-0">
+          <thead><tr><th>Day</th><th>Hours</th></tr></thead>
+          <tbody>
+            <tr><td>Monday - Friday</td><td>9:00 AM - 7:00 PM</td></tr>
+            <tr><td>Saturday</td><td>10:00 AM - 5:00 PM</td></tr>
+            <tr><td>Sunday</td><td>Closed</td></tr>
+          </tbody>
+        </table>
+      </div>
+    </div>
+  </div>
+
+  <footer class="text-center py-3" style="background-color: darkturquoise;">
+    &copy; 2026 Best Cars Dealership. All rights reserved.
+  </footer>
+</body>
+</html>
