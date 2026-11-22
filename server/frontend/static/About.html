@@ -1,68 +1,88 @@
 <html>
 <head>
-  <!-- Link the style sheet here -->
+  <meta charset="UTF-8">
+  <title>About Us - Best Cars Dealership</title>
+  <link rel="stylesheet" href="/static/style.css">
+  <link rel="stylesheet" href="/static/bootstrap.min.css">
+  <style>
+    body { background-color: #f4f6f9; }
+    .about-header {
+      background: linear-gradient(135deg, #1e3c72, #2a5298);
+      color: white;
+      padding: 50px 20px;
+      text-align: center;
+      font-size: 18px;
+    }
+    .about-header h1 { font-weight: bold; margin-bottom: 15px; }
+    .card { border: none; border-radius: 12px; box-shadow: 0 4px 12px rgba(0,0,0,0.1); }
+    .card-img-top { height: 280px; object-fit: cover; border-radius: 12px 12px 0 0; }
+    .card-title { font-weight: bold; color: #1e3c72; }
+    .role { color: #2a5298; font-weight: 600; }
+  </style>
 </head>
-<div>
-  <nav class="navbar navbar-expand-lg navbar-light" style="background-color:darkturquoise; height: 1in;">
+<body>
+  <!-- Navigation bar -->
+  <nav class="navbar navbar-expand-lg navbar-light" style="background-color: darkturquoise; height: 1in;">
     <div class="container-fluid">
       <h2 style="padding-right: 5%;">Dealerships</h2>
-      <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarText" aria-controls="navbarText" aria-expanded="false" aria-label="Toggle navigation">
-        <span class="navbar-toggler-icon"></span>
-      </button>
       <div class="collapse navbar-collapse" id="navbarText">
         <ul class="navbar-nav me-auto mb-2 mb-lg-0">
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" aria-current="page" href="/">Home</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link active" style="font-size: larger;" href="/about">About Us</a>
-          </li>
-          <li class="nav-item">
-            <a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a>
-          </li>
+          <li class="nav-item"><a class="nav-link" style="font-size: larger;" href="/">Home</a></li>
+          <li class="nav-item"><a class="nav-link active" style="font-size: larger;" href="/about">About Us</a></li>
+          <li class="nav-item"><a class="nav-link" style="font-size: larger;" href="/contact">Contact Us</a></li>
         </ul>
       </div>
     </div>
   </nav>
-  
-    <div class="card" style="width: 80%;margin: auto; margin-top:5%;">
-      <div class="banner" name="about-header">
-      <!-- Insert header information here -->
-      </div>
-      <div style="display: flex;flex-direction: row; margin:auto">
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person1</p>
-          <p>Person1 Title</p>
-          <p class="card-text">Some text that explains the person1 in about 2 short sentences</p>
-          <p>person1@example.com</p>
+
+  <div class="about-header">
+    <h1>About Us</h1>
+    Welcome to Best Cars dealership, home to the best cars in North America. We deal in selling domestic and imported cars at reasonable prices.
+    <br><br>
+    Since 2010, we have helped thousands of families find reliable vehicles, with certified pre-owned options, flexible financing and friendly after-sales service.
+  </div>
+
+  <div class="container my-5">
+    <h2 class="text-center mb-4">Meet Our Team</h2>
+    <div class="row g-4">
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="https://randomuser.me/api/portraits/men/32.jpg" alt="James Carter">
+          <div class="card-body text-center">
+            <h5 class="card-title">James Carter</h5>
+            <p class="role">Founder &amp; CEO</p>
+            <p class="card-text">With over 20 years in the automotive industry, James leads our vision of honest and affordable car sales.</p>
+            <p class="card-text"><small>james.carter@bestcars.com</small></p>
+          </div>
         </div>
       </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person2</p>
-          <p>Person2 Title</p>
-          <p class="card-text">Some text that explains the person2 in about 2 short sentences</p>
-          <p>person2@example.com</p>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="https://randomuser.me/api/portraits/women/44.jpg" alt="Sarah Mitchell">
+          <div class="card-body text-center">
+            <h5 class="card-title">Sarah Mitchell</h5>
+            <p class="role">Sales Manager</p>
+            <p class="card-text">Sarah and her team help every customer find the right car for their budget and lifestyle.</p>
+            <p class="card-text"><small>sarah.mitchell@bestcars.com</small></p>
+          </div>
         </div>
       </div>
-
-      <div class="card" style="width: 30%;">
-        <img class="card-img-top" src="/static/person.png" alt="Card image">
-        <div class="card-body">
-          <p class="title">Person3</p>
-          <p>Person3 Title</p>
-          <p class="card-text">Some text that explains the person3 in about 2 short sentences</p>
-          <p>person3@example.com</p>
+      <div class="col-md-4">
+        <div class="card">
+          <img class="card-img-top" src="https://randomuser.me/api/portraits/men/75.jpg" alt="David Lee">
+          <div class="card-body text-center">
+            <h5 class="card-title">David Lee</h5>
+            <p class="role">Service Director</p>
+            <p class="card-text">David oversees our service centers, making sure every vehicle is inspected and road-ready.</p>
+            <p class="card-text"><small>david.lee@bestcars.com</small></p>
+          </div>
         </div>
       </div>
     </div>
-    </div>
-    </div>
-    
-</div>
+  </div>
 
+  <footer class="text-center py-3" style="background-color: darkturquoise;">
+    &copy; 2026 Best Cars Dealership. All rights reserved.
+  </footer>
+</body>
 </html>
